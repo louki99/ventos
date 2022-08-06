@@ -15,7 +15,7 @@ spring:
     mongodb:
       authentication-database: admin
       username: ${MONGODB_USERNAME:root}
-      database: ${MONGODB_DATABASE:imdae}
+      database: ${MONGODB_DATABASE:ventos}
       password: ${MONGODB_PASSWORD:password}
       port:     ${MONGODB_PORT:27017}
       host:     ${MONGODB_DOMAIN:10.107.225.60}
