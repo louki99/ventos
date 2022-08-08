@@ -1,1 +1,32 @@
 
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+      
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: ${MONGODB_USERNAME:root}
+      database: ${MONGODB_DATABASE:ventos}
+      password: ${MONGODB_PASSWORD:password}
+      port:     ${MONGODB_PORT:27017}
+      host:     ${MONGODB_DOMAIN:10.107.225.60}
+  zipkin:
+    base-url: http://${ZIPKIN_HOST:localhost}:9411
+  sleuth:
+    sampler:
+      probability: '1.0'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:password@${EUREKA_HOST:localhost}:8761/eureka
