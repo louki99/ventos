@@ -11,6 +11,11 @@ management:
       show-details: always
       
 spring:
+  cloud:
+    stream:
+      bindings:
+        notificationEventSupplier-in-0:
+          destination: notification-events
   zipkin:
     base-url: http://${ZIPKIN_HOST:localhost}:9411
   sleuth:
