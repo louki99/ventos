@@ -1,3 +1,8 @@
+realms:
+  value: "ventos"
+  clientId: "ventos-managment"
+  secretClient: "N8DvzSa6Oiiw4rMRncgeb0dcc4xtipqk"
+  grantType: "password"
 management:
   health:
     circuitbreakers:
