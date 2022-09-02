@@ -1,0 +1,23 @@
+spring:
+  zipkin:
+    base-url: http://${ZIPKIN_HOST:localhost}:9411
+  sleuth:
+    sampler:
+      probability: '1.0'
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:password@${EUREKA_HOST:localhost}:8761/eureka
+      
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
