@@ -31,3 +31,6 @@ eureka:
       
 file:
   upload-dir: /home/louki/ventos/uploads/medias
+  
+folder:
+  location: /home/louki/ventos/uploads/medias
