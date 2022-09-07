@@ -23,7 +23,7 @@ spring:
       database: ${MONGODB_DATABASE:ventos}
       password: ${MONGODB_PASSWORD:password}
       port:     ${MONGODB_PORT:27017}
-      host:     ${MONGODB_DOMAIN:localhost}
+      host:     ${MONGODB_DOMAIN:10.107.225.60}
   cloud:
     loadbalancer:
       ribbon:
