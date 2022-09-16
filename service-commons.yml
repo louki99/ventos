@@ -33,4 +33,4 @@ file:
   upload-dir: ~/ventos/uploads/medias
   
 folder:
-  location: ~/ventos/uploads/medias
+  location: /home/louki/ventos/uploads/medias
