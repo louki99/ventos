@@ -1,7 +1,7 @@
 realms:
   value: "ventos"
   clientId: "ventos-managment"
-  secretClient: "cajICp53AZ0m2blZU3pOyw5skIiOS1uI"
+  secretClient: "N8DvzSa6Oiiw4rMRncgeb0dcc4xtipqk"
   grantType: "password"
 spring:
   zipkin:
