@@ -1,8 +1,3 @@
-realms:
-  value: "ventos"
-  clientId: "ventos-managment"
-  secretClient: "e3AngFIJsj1fYVtzm7ktNSZmao9F2qJX"
-  grantType: "password"
 spring:
   zipkin:
     base-url: http://${ZIPKIN_HOST:localhost}:9411
